@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ring_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 320px;
+      /* height: 300px; */
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50vw;
+      height: 68vh;
+      background-color: white;
+      /* opacity: 0.9; */
+      z-index: 1;
+    }
+
+    #popup-iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .card{
+        justify-content: left ;
+        align-items: center;
+        display: flex;
+        width: 100rem;
+        box-shadow: 5px 10px grey;
+        padding: 20px;
+        height: 44rem;
+        margin-top: -48px;
+      }
+      .btn:hover{
+        transform:scale(1.1) ;
+      }
+      
+
+  </style>
+
+<body>
+
+
+    <!-- card -->
+    
+        <!-- first card -->
+      <div style="margin-top: 50px; display: flex; justify-content: center; border: 5px black;">
+        <div class="card">
+        <div style="padding-left: 50px; padding-right: 50px;">
+        <img src="./Jewellery/renders/Necklace_XL_Gold.png" class="card-img-top" height="200px" width="150px" alt="ring">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Gold Necklace</h5>
+          <p class="fw-light">22KT Gold</p>
+          <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+            <div style="width: 300px; display: flex;">
+              <div style="display: flex;">
+              <button class="button" onclick="totalClick(1)" style="border-radius: 5px;">+</button>
+              <span id="totalClicks" style="margin-left: 2px; margin-right: 2px;">0</span>
+               <button class="button" onclick="totalClick(-1)" style="border-radius: 5px;">-</button>
+           </div>
+          <h5 style="text-align: right; margin-left: 184px;">$7,349</h5>
+      </div>
+        </div>
+          <br>
+          <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px; height: 171px;">
+            <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+              <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+            </p>
+          </div>
+          <div style="display: flex;">
+          <a href="#" class="btn btn-primary" style="">Add to cart</a>
+          <a  class="btn btn-primary" id="popup-button" target="webcam" style="margin-left: 120px;">try on </a>
+          <div id="overlay"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+   
+        
+        <div id="popup">
+          <button id="close-but" onclick="closeWin()" style="border-radius: 5px; background-color: white; color: black; float: right; border-color: white;">x</button>
+          <iframe src="webcam.html" id="popup-iframe"></iframe>
+        </div>
+    
+        <script>
+          const button = document.getElementById("popup-button");
+          const overlay = document.getElementById("overlay");
+          const popup = document.getElementById("popup");
+    
+          button.addEventListener("click", function () {
+            overlay.style.display = "block";
+            popup.style.display = "block";
+          });
+    
+          overlay.addEventListener("click", function () {
+            overlay.style.display = "none";
+            popup.style.display = "none";
+          });
+
+
+
+
+          // cose popup
+
+
+
+          function closeWin()   // Tested Code
+{
+var someIframe = window.parent.document.getElementById('popup');
+someIframe.parentNode.removeChild(someIframe);
+}
+
+//           // close
+
+//           function ClosePop() {
+//     var layer = document.getElementById("overlay");
+//     var iframe = document.getElementById("popup");
+//     document.body.removeChild(layer); // remove layer
+//     document.body.removeChild(iframe); // remove div
+// }
+
+
+
+
+          function totalClick(click) {
+    const totalClicks = document.getElementById('totalClicks');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+        </script>
+     
+     
+</body>
+</html>

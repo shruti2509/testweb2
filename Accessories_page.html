@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessorie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    .head{
+            height: 60px;
+            width: 100vw;
+            background-color: rgb(207, 178, 180);
+            position: relative;
+            color: rgb(90, 27, 27);
+            display: flex;
+            position: sticky;
+            
+            align-items: center;
+            
+        }
+        .navul{
+            position: absolute;
+            padding-left: 40rem;
+            position: sticky;
+        }
+        .navli{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 50px;
+            
+        }
+        .navli:hover{
+            transform: scale(1.2);
+            font-weight: bold;
+        }
+        
+        span{
+            color: rgb(90, 27, 27);
+            margin-left: 50px;
+        }
+
+        /* navbar */
+
+        .headNav{
+            background-color: azure;
+            position: relative;
+            border-color: white;
+            height:100%;
+            width:200px;
+        }
+        ul{
+            position: absolute;
+        }
+        .header{
+            /* border-color: black; */
+            /* border-bottom: 2px; */
+            background-color: white;
+            top: 0px;
+            /* position: sticky; */
+            width:100vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 60px;
+        }
+        .headli{
+            color: rgb(90, 27, 27);
+            
+        }
+        .headul{
+            background-color: rgb(247, 229, 230);
+            width: 100vw;
+            height: 40px;
+        }
+
+
+        /* cards */
+
+        .card{
+        justify-content: left ;
+        align-items: center;
+        display: flex;
+        width: 20rem;
+        box-shadow: 5px 10px grey;
+        padding: 20px;
+      }
+      .btn:hover{
+        transform:scale(1.1) ;
+      }
+</style>
+<body>
+
+    <!-- <a href="iframe1.html" target="iframe1" style="margin-left: 154px;"> </a> -->
+    <div class="head">
+        <span ><b>Brand</b></span>
+        <input type="seach" placeholder="type here to search" style="margin-left: 10px;">
+        <nav>
+            <ul class="navul">
+                <li class="navli">wishlist</li>
+                <li class="navli">cart</li>
+                <li class="navli">Account</li>
+                <li class="navli">Help & Support</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- navbar -->
+    <div class="header">
+<nav class="headnav">
+    <ul class="headul">
+        <li class="headli">All</li>
+        <li class="headli">Men</li>
+        <li class="headli">Women</li>
+        <li class="headli">Beauty</li>
+        <li class="headli">Watch</li>
+        <li class="headli">Accessorie</li>
+    </ul>
+</nav>
+</div>
+
+
+
+
+
+
+<!-- cards -->
+
+<div style="display: flex; margin-left: 50px; justify-content: space-between; margin-right: 50px;"> 
+    <!-- first card -->
+  <div style="margin-top: 50px; display: flex; justify-content: center; border: 5px black;">
+    <div class="card">
+    <div style="padding-left: 50px; padding-right: 50px;">
+    <img src="./Jewellery/renders/ring1.png" class="card-img-top" height="200px" width="150px" alt="ring">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">Elite Gold Ring</h5>
+      <p class="fw-light">18KT Yellow Gold</p>
+      <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+        <div style="width: 300px; display: flex;">
+          <div style="display: flex;">
+          <button class="button" onclick="totalClick(1)" style="border-radius: 5px; height: 28px;"><p class="plus">+</p></button>
+          <span id="totalClicks" style="margin-left: 2px; margin-right: 2px;">0</span>
+           <button class="button" onclick="totalClick(-1)" style="border-radius: 5px; height: 28px;"><p class="minus">-</p></button>
+       </div>
+      <h5 style="text-align: right; margin-left: 184px;">$7,349</h5>
+  </div>
+    </div>
+      <br>
+      <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+        <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+          <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+        </p>
+      </div>
+      <div style="display: flex;">
+      <a href="./popupiframe.html" class="btn btn-primary" style="">Add to cart</a>
+      <a href="popupiframe.html" class="btn btn-primary" target="webcam" style="margin-left: 100px;">try it on </a>
+    </div>
+    </div>
+  </div>
+</div>
+ <!-- second card-->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+  <div class="card">
+  <div style="padding-left: 50px; padding-right: 50px; border: 5px black;">
+  <img src="./Jewellery/renders/ring2.png"class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Diamond Ring</h5>
+    <p class="fw-light">18KT white Gold</p>
+    <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+      <div style="width: 300px; display: flex;">
+        <div style="display: flex;">
+        <button class="button" onclick="totalClick2(1)" style="border-radius: 5px; height: 28px;"><p class="plus">+</p></button>
+        <span id="second-quantity" style="margin-left: 2px; margin-right: 2px;">0</span>
+         <button class="button" onclick="totalClick2(-1)" style="border-radius: 5px; height: 28px;"><p class="minus">-</p></button>
+     </div>
+    <h5 style="text-align: right; margin-left: 178px;">$9,999</h5>
+</div>
+    
+  </div>
+    <br>
+    <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+      <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+        <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style necklace. Diamond accents on the band add a truly dazzling effect.</p>
+      </p>
+    </div>
+    <div style="display: flex;">
+    <a href="./popupiframe2.html" class="btn btn-primary">Add to cart</a>
+    <a href="popupiframe2.html" class="btn btn-primary" target="webcam" style="margin-left: 120px;">try on </a>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- third card -->
+<div style="margin-top: 50px; display: flex; justify-content: center; border: 5px black;">
+  <div class="card">
+  <div style="padding-left: 50px; padding-right: 50px;">
+  <img src="./Jewellery/renders/ring.png" class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Gold Ring</h5>
+    <p class="fw-light">22KT Yellow Gold</p>
+    <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+      <div style="width: 300px; display: flex;">
+        <div style="display: flex;">
+        <button class="button" onclick="totalClick3(1)" style="border-radius: 5px; height: 28px;"><p class="plus">+</p></button>
+        <span id="totalClicks3" style="margin-left: 2px; margin-right: 2px;">0</span>
+         <button class="button" onclick="totalClick3(-1)" style="border-radius: 5px; height: 28px;">-</button>
+     </div>
+    <h5 style="text-align: right; margin-left: 184px;">$9,349</h5>
+</div>
+  </div>
+    <br>
+    <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px;">
+      <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+        <p style="padding-left: 20px;">An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style Earing. Diamond accents on the band add a truly dazzling effect.</p>
+      </p>
+    </div>
+    <div style="display: flex;">
+    <a href="popupiframe3.html" class="btn btn-primary">Add to cart</a>
+    <a href="popupiframe3.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- forth card -->
+<div style="margin-top: 50px; display: flex; justify-content: center; border: 5px black; border-radius: 3px;">
+  <div class="card">
+  <div style="padding-left: 50px; padding-right: 50px;">
+  <img src="./Jewellery/renders/earring1.png" width="150px" height="200px" alt="ring">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Silver Earing</h5>       
+    <p class="fw-light">Silver</p>
+    <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+      <div style="width: 300px; display: flex;">
+        <div style="display: flex;">
+        <button class="button" onclick="totalClick4(1)" style="border-radius: 5px; height: 28px;">+</button>
+        <span id="totalClicks4" style="margin-left: 2px; margin-right: 2px;">0</span>
+         <button class="button" onclick="totalClick4(-1)" style="border-radius: 5px; height: 28px;">-</button>
+     </div>
+    <h5 style="text-align: right; margin-left: 184px;">$7,349</h5>
+</div>
+  </div>
+    <br>
+    <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px;">
+      <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+        <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+      </p>
+    </div>
+    <div style="display: flex;">
+    <a href="./popupiframe4.html" class="btn btn-primary" style="height: 39px; width: 122;">Add to cart</a>
+    <a href="popupiframe4.html" class="btn btn-primary" target="iframe1" style="margin-left: 123px;">try on </a>
+  </div>
+  </div>
+</div>
+</div>
+</div> 
+
+<!-- second row -->
+
+<div style="display: flex; margin-left: 50px; justify-content: space-between; margin-right: 50px;"> 
+  <!-- first card -->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+  <div class="card">
+  <div style="padding-left: 50px; padding-right: 50px;">
+  <img src="./Jewellery/renders/earring2.png" class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Earing</h5>
+    <p class="fw-light">Classic Style</p>
+    <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+      <div style="width: 300px; display: flex;">
+        <div style="display: flex;">
+        <button class="button" onclick="totalClick21(1)" style="border-radius: 5px;">+</button>
+        <span id="totalClicks21" style="margin-left: 2px; margin-right: 2px;">0</span>
+         <button class="button" onclick="totalClick21(-1)" style="border-radius: 5px;">-</button>
+     </div>
+    <h5 style="text-align: right; margin-left: 188px;">$66</h5>
+</div>
+  </div>
+    <br>
+    <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+      <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+        <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+      </p>
+    </div>
+    <div style="display: flex;">
+    <a href="popupiframe5.html" class="btn btn-primary" style="">Add to cart</a>
+    <a href="popupiframe5.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+  </div>
+  </div>
+</div>
+</div>
+<!-- second card-->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/Necklace_L_Gold.png"class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Gold Necklace</h5>
+  <p class="fw-light">22KT Gold</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick22(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks22" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick22(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$73</h5>
+</div>
+  
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="#" class="btn btn-primary">Add to cart</a>
+  <a href="popupiframe6.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- third card -->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/Necklace_S_Gold.png" class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Gold Necklace</h5>
+  <p class="fw-light">22KT Gold</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick23(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks23" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick23(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$7,349</h5>
+</div>
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;">An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="#" class="btn btn-primary">Add to cart</a>
+  <a href="popupiframe7.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- forth card -->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/Necklace_sL_Gold.png" width="150px" height="200px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Gold Necklace</h5>
+  <p class="fw-light">22KT Gold</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick24(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks24" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick24(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$160</h5>
+</div>
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="#" class="btn btn-primary" style="height: 39px; width: 122;">Add to cart</a>
+  <a href="popupiframe8.html" class="btn btn-primary" target="iframe1" style="margin-left: 123px;">try on </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- third row -->
+
+<div style="display: flex; margin-left: 50px; justify-content: space-between; margin-right: 50px;"> 
+  <!-- first card -->
+<div style="margin-top: 50px; display: flex; justify-content: center;">
+  <div class="card">
+  <div style="padding-left: 50px; padding-right: 50px;">
+  <img src="./Jewellery/renders/Necklace_XL_Gold.png" class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+  <div class="card-body">
+    <h5 class="card-title">Gold Necklace</h5>
+    <p class="fw-light">22KT GOld</p>
+    <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+      <div style="width: 300px; display: flex;">
+        <div style="display: flex;">
+        <button class="button" onclick="totalClick31(1)" style="border-radius: 5px;">+</button>
+        <span id="totalClicks31" style="margin-left: 2px; margin-right: 2px;">0</span>
+         <button class="button" onclick="totalClick31(-1)" style="border-radius: 5px;">-</button>
+     </div>
+    <h5 style="text-align: right; margin-left: 184px;">$170</h5>
+</div>
+  </div>
+    <br>
+    <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+      <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+        <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+      </p>
+    </div>
+    <div style="display: flex;">
+    <a href="popupiframe9.html" class="btn btn-primary" style="">Add to cart</a>
+    <a href="popupiframe9.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+  </div>
+  </div>
+</div>
+</div>
+<!-- second card-->
+<!-- <div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/burger .png"class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Fastrack Men Watch</h5>
+  <p class="fw-light">Digital watch</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick32(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks32" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick32(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$200</h5>
+</div>
+  
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="popupiframe10.html" class="btn btn-primary">Add to cart</a>
+  <a href="popupiframe10.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+</div>
+</div>
+</div>
+</div> -->
+
+<!-- third card -->
+<!-- <div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/coffe cup.png" class="card-img-top" height="200px" width="150px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Fastrack Woment Watch</h5>
+  <p class="fw-light">Pink Dial Silicone Strap</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick33(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks33" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick33(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$160</h5>
+</div>
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;">An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="popupiframe11.html" class="btn btn-primary">Add to cart</a>
+  <a href="popupiframe11.html" class="btn btn-primary" target="iframe1" style="margin-left: 120px;">try on </a>
+</div>
+</div>
+</div>
+</div> -->
+
+<!-- forth card -->
+<!-- <div style="margin-top: 50px; display: flex; justify-content: center;">
+<div class="card">
+<div style="padding-left: 50px; padding-right: 50px;">
+<img src="./Jewellery/renders/coffe cup.png" width="150px" height="200px" alt="ring">
+</div>
+<div class="card-body">
+  <h5 class="card-title">Fastrack Earbuds</h5>
+  <p class="fw-light">TRULY WIRELESS PINK EAR BUDS</p>
+  <div style="display: flex; flex-direction: left; align-content: center; align-items: center; ">
+    <div style="width: 300px; display: flex;">
+      <div style="display: flex;">
+      <button class="button" onclick="totalClick34(1)" style="border-radius: 5px;">+</button>
+      <span id="totalClicks34" style="margin-left: 2px; margin-right: 2px;">0</span>
+       <button class="button" onclick="totalClick34(-1)" style="border-radius: 5px;">-</button>
+   </div>
+  <h5 style="text-align: right; margin-left: 184px;">$7,349</h5>
+</div>
+</div>
+  <br>
+  <div class="card-text" style="background-color: rgb(246, 240, 240); border-radius: 20px 0px">
+    <p style="padding-top: 20px; margin-top: 5px; padding-left: 20px;"><strong>About</strong>
+      <p style="padding-left: 20px;" >An alluring halo of diamonds embrace and accentuate the center gem of this brilliant antique-style ring. Diamond accents on the band add a truly dazzling effect.</p>
+    </p>
+  </div>
+  <div style="display: flex;">
+  <a href="popupiframe12.html" class="btn btn-primary" style="height: 39px; width: 122;">Add to cart</a>
+  <a href="popupiframe12.html" class="btn btn-primary" target="iframe1" style="margin-left: 123px;">try on </a>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+
+<script>
+     function totalClick(click) {
+      const totalClicks = document.getElementById('totalClicks');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+
+    function totalClick2(click) {
+    const totalClicks = document.getElementById('second-quantity');
+    
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    
+    console.log(sumvalue + click);
+    
+    totalClicks.innerText = sumvalue;
+    
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+
+
+
+    // third
+
+    function totalClick3(click) {
+      const totalClicks = document.getElementById('totalClicks3');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+
+    // fourth
+
+
+    function totalClick4(click) {
+      const totalClicks = document.getElementById('totalClicks4');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+
+    // fifth
+
+    function totalClick21(click) {
+      const totalClicks = document.getElementById('totalClicks21');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // sixth
+    function totalClick22(click) {
+      const totalClicks = document.getElementById('totalClicks22');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // seventh
+
+    function totalClick23(click) {
+      const totalClicks = document.getElementById('totalClicks23');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // eight
+    function totalClick24(click) {
+      const totalClicks = document.getElementById('totalClicks24');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+    // nineth
+
+    function totalClick31(click) {
+      const totalClicks = document.getElementById('totalClicks31');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // 10th
+
+    function totalClick32(click) {
+      const totalClicks = document.getElementById('totalClicks32');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // 11th
+
+    function totalClick33(click) {
+      const totalClicks = document.getElementById('totalClicks33');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+
+    // 12th
+
+    function totalClick24(click) {
+      const totalClicks = document.getElementById('totalClicks24');
+    const sumvalue = parseInt(totalClicks.innerText) + click;
+    console.log(sumvalue + click);
+    totalClicks.innerText = sumvalue;
+    // avoid negative
+    if (sumvalue < 0){
+      totalClicks.innerText = 0;
+    } 
+    }
+</script>
+</body>
+</html>
